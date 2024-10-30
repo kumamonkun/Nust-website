@@ -610,8 +610,92 @@ a.back-to-top:hover, a.back-to-top:focus {
 .navbar-brand img {
   /* width: 40%; */
   height: 10%;
+  
 }
 
+navbar li {
+  float: left;
+}
+
+.navbar li a, .dropdown .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover, .dropdown:hover .dropbtn {
+  background-color:  #1b2c5d;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  background-color: rgba(0, 0, 0, 0.08);
+  color: floralwhite;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+  left: 0; 
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: large;
+}
+
+.dropdown .dropbtn {
+  font-size: large;
+  left: 0;
+  margin-top: 5px;
+  background-color:  #ffdd57;
+  opacity: 0.8;
+  border-radius: 9px;
+  left: 200;
+  color: #000;
+  box-sizing: unset;
+  
+}
+
+
+.dropbtn a{
+  color: #000;
+}
+
+
+
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #C8102E;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+  left: 0; 
+  margin-top: 19px;
+  
+}
+
+/* Show the Dropdown Menu on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .top-nav-collapse {
   background: #fff;
   z-index: 999999;
@@ -626,6 +710,9 @@ a.back-to-top:hover, a.back-to-top:focus {
   animation-name: fadeInDown;
   background: #fff !important;
 }
+
+/*Dropdown Menu END */
+
 
 .top-nav-collapse .navbar-brand {
   top: 0px;
