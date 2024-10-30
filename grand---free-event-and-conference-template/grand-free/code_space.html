@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Coding Playground</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#coding-playground, #questions-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+}
+
+#code-editor {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#run-code {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#run-code:hover {
+    background-color: #218838;
+}
+
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    min-height: 50px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answer {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    margin-top: 5px;
+}
+
+.submit-answer {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-answer:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Coding Playground Section -->
+        <section id="coding-playground">
+            <h2>Live Coding Playground</h2>
+            <div class="editor">
+                <textarea id="code-editor" placeholder="Type your code here..."></textarea>
+                <button id="run-code">Run Code</button>
+            </div>
+            <div id="output" class="output"></div>
+        </section>
+
+        <!-- Programming Questions Section -->
+        <section id="questions-section">
+            <h2>Programming Questions</h2>
+            <div id="questions">
+                <!-- Example questions -->
+                <div class="question">
+                    <p><strong>Q1:</strong> What is the difference between var, let, and const in JavaScript?</p>
+                    <textarea class="answer" placeholder="Your answer here..."></textarea>
+                    <button class="submit-answer">Submit Answer</button>
+                </div>
+                <div class="question">
+                    <p><strong>Q2:</strong> Explain the concept of closures in JavaScript.</p>
+                    <textarea class="answer" placeholder="Your answer here..."></textarea>
+                    <button class="submit-answer">Submit Answer</button>
+                </div>
+                <!-- Add more questions here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="code_space.js"></script>
+</body>
+</html>
